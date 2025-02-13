@@ -18,12 +18,12 @@
         <a href="#" class="logo"><i class="fas fa-heartbeat"></i> medcare.</a>
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#services">services</a>
-            <a href="#about">about</a>
-            <a href="#doctors">doctors</a>
-            <a href="#book">book</a>
-            <a href="#review">review</a>
-            <a href="#blogs">blogs</a>
+            <a href="#services">explore</a>
+            <a href="#about">public</a>
+            <a href="#doctors">conditions</a>
+            <a href="#book">more</a>
+            <!-- <a href="#review">review</a>
+            <a href="#blogs">blogs</a> -->
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
     </div>
@@ -36,11 +36,92 @@
         </div>
         <div class="content">
             <h3>stay safe, stay healthy</h3>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Rem Sed Autem Vero? Magnam, Est Laboriosam!</p>
+            <p>Ensuring safer and smarter medicine with cutting-edge drug interaction analysis, helping you make informed healthcare decisions with confidence.</p>
             <a href="#" class="btn">contact us <span class="fas fa-chevron-right"></span> </a>
         </div>
     </section>
     <!-- Home Section End -->
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br><br></br>
+
+    <!-- Drug Interaction section Starts  -->
+<section class="services" id="services">
+    <h1 class="heading">drug <span>interaction checker</span></h1>
+    <br></br><br></br>
+    <div class="box-container">
+        <div class="box">
+            <h3>Enter Drug 1</h3>
+            <input type="text" id="drug1" placeholder="Enter the name of the first drug">
+        </div>
+        <div class="box">
+            <h3>Enter Drug 2</h3>
+            <input type="text" id="drug2" placeholder="Enter the name of the second drug">
+        </div>
+        <div class="box">
+            <button class="btn" onclick="checkInteraction()">Check Interaction</button>
+        </div>
+    </div>
+    <p id="interaction-result"></p>
+    
+    <p class="disclaimer"><strong>DISCLAIMER:</strong> The information contained here should NOT be used as a substitute for the advice of an appropriately qualified and licensed physician or other health care provider. The information provided here is for informational purposes only. This tool may not cover all possible drug interactions. Please check with a physician if you have health questions or concerns. Although we attempt to provide accurate and up-to-date information, no guarantee is made to that effect.</p>
+</section>
+<!-- Drug Interaction section End -->
+
+<!-- CSS for spacing and font size -->
+<style>
+    .box-container {
+        display: flex;
+        gap: 20px; /* Adds space between input boxes */
+        justify-content: space-between;
+        margin-bottom: 20px; /* Adds space below the boxes */
+    }
+
+    .box {
+        flex: 1;
+    }
+
+    #interaction-result {
+        margin-top: 20px; /* Adds space above the result */
+    }
+
+    .disclaimer {
+        font-size: 1.7em; /* Increase the font size */
+        margin-top: 30px; /* Adds space above the disclaimer */
+        color: #555; /* Optional: Make the text a bit lighter for better readability */
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.3em;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #4CAF50; /* Change button color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049; /* Button hover effect */
+    }
+</style>
+
+<br></br>
+    <br></br>
+    <br></br>
+    <br></br><br></br><br></br><br></br>
+
 
     <!-- icons section starts  -->
     <section class="icons-container">
@@ -57,18 +138,18 @@
         <div class="icons">
             <i class="fas fa-procedures"></i>
             <h3>500+</h3>
-            <p>bed facility</p>
+            <p>total interactions</p>
         </div>
-        <div class="icons">
+        <!-- <div class="icons">
             <i class="fas fa-hospital"></i>
             <h3>80+</h3>
             <p>available hospitals</p>
-        </div>
+        </div> -->
     </section>
     <!-- icons section End  -->
 
     <!-- Service section Starts  -->
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <h1 class="heading">our <span>services</span></h1>
         <div class="box-container">
             <div class="box">
@@ -108,28 +189,162 @@
                 <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span> </a>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Service section End  -->
 
-    <!-- About section Starts  -->
+    <!-- Welcome Section Starts -->
+    <section class="welcome" id="welcome">
+        <h1 class="heading">Welcome to <span>DDI Explorer</span></h1>
+        <p class="intro">Unveiling Safer Connections in Medicine</p>
+        <p class="description">
+            Navigating the complexities of modern medicine requires reliable, precise insights. At DDI Explorer, we aim to simplify the understanding of drug interactions, ensuring better outcomes for healthcare professionals, researchers, and patients alike.
+        </p>
+        <p class="description">
+            Our platform combines advanced machine learning models and robust datasets to analyze potential interactions, predict risks, and support innovative solutions in drug discovery and healthcare. Whether you're a curious researcher, a seasoned clinician, or simply someone eager to learn, DDI Explorer provides a user-friendly space to uncover vital connections in the biomedical field.
+        </p>
+        <p class="description">
+            Take the first step toward safer, smarter medicine. Explore today!
+        </p>
+    </section>
+    <!-- Welcome Section End -->
+
+    <!-- About Section Starts -->
     <section class="about" id="about">
-        <h1 class="heading"><span>about</span> us</h1>
+        <!-- <h1 class="heading"><span>who we are</span></h1> -->
         <div class="row">
             <div class="image">
-                <img src="./image/about-img.svg" alt="">
+                <img src="./image/about-img.svg" alt="DDI Explorer Image">
             </div>
             <div class="content">
-                <h3>we take care of your healthy life</h3>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Iure Ducimus, Quod Ex Cupiditate Ullam In Assumenda Maiores Et Culpa Odit Tempora Ipsam Qui, Quisquam Quis Facere Iste Fuga, Minus Nesciunt.</p>
-                <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Natus Vero Ipsam Laborum Porro Voluptates Voluptatibus A Nihil Temporibus Deserunt Vel?</p>
-                <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span> </a>
+                <h3>Who We Are</h3>
+                <p>At DDI Explorer, we are a team of passionate researchers, developers, and healthcare enthusiasts committed to advancing the safety and efficacy of drug therapies. With a foundation in cutting-edge machine learning and a drive for innovation, we aim to empower users with the tools and knowledge to uncover, analyze, and mitigate drug-drug interactions.</p>
             </div>
         </div>
+
+        <!-- <h1 class="heading"><span>our mission</span></h1> -->
+        <!-- Our Mission Section -->
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p class="highlight">Making Medicine Safer, Smarter, and More Effective.</p>
+            <p>At DDI Explorer, our mission is to provide reliable insights into drug interactions through cutting-edge technology and data-driven solutions.</p>
+            <p>We bridge the gap between complex medical data and practical healthcare applications, empowering professionals worldwide with innovative tools for drug safety and discovery.</p>
+        </div>
+
+
     </section>
-    <!-- About section End  -->
+    <!-- About Section End -->
+
+    <!-- Style Section Starts -->
+    <style>
+        /* General Section Styles */
+        .welcome, .about {
+            padding: 50px 20px;
+        }
+
+        /* Welcome Section Styles */
+        .welcome {
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .welcome .heading {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .welcome .intro {
+            font-size: 2.4em;
+            color: #7aae9d;
+            margin: 20px 0;
+        }
+
+        .welcome .description {
+            font-size: 1.7em;
+            color: #555;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* About Section Styles */
+        .about {
+            background-color: #ffffff;
+        }
+
+        .about .heading {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .about .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about .content {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .about .content h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about .content p {
+            font-size: 1.9em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Our Mission Section Styles */
+        .mission {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 50px 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .mission h3 {
+            font-size: 4.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .mission .highlight {
+            font-size: 2.6em;
+            font-weight: bold;
+            color: #7aae9d;
+            margin-bottom: 10px;
+        }
+
+        .mission p {
+            font-size: 1.8em;
+            color: #555;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 15px;
+        }
+        </style>
+
+    <!-- Style Section End -->
+
+
 
     <!-- Doctors section Starts  -->
-    <section class="doctors" id="doctors">
+    <!-- <section class="doctors" id="doctors">
         <h1  class="heading">our <span>doctors</span></h1>
         <div class="box-container">
             <div class="box">
@@ -199,23 +414,23 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Doctors section Ends  -->
 
     <!-- Book section Starts  -->
     <section class="book" id="book">
-        <h1 class="heading"><span>book</span> now</h1>
+        <h1 class="heading"><span>Sign up</span> now</h1>
         <div class="row">
             <div class="image">
                 <img src="./image/book-img.svg" alt="">
             </div>
             <form action="">
-                <h3>book appointment</h3>
+                <h3>Register</h3>
                 <input type="text" placeholder="your name" class="box">
                 <input type="number" placeholder="your number" class="box">
                 <input type="email" placeholder="your email" class="box">
                 <input type="date" class="box">
-                <input type="submit" value="book now" class="btn">
+                <input type="submit" value="Register" class="btn">
             </form>
         </div>
     </section>
@@ -321,20 +536,20 @@
             <div class="box">
                 <h3>quick links</h3>
                 <a href="#"> <i class="fas fa-chevron-right"></i> home</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> services</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> about</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> doctors</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> book</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> review</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> blogs</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> explore</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> public</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> conditions</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> more</a>
+                <!-- <a href="#"> <i class="fas fa-chevron-right"></i> review</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> blogs</a> -->
             </div>
             <div class="box">
                 <h3>our services</h3>
-                <a href="#"> <i class="fas fa-chevron-right"></i> dental care</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> message therapy</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis</a>
-                <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Drug Interaction Analysis</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Risk Assessment & Warnings</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Drug Recommendations</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> AI-Powered Predictions</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Educational Resourcese</a>
             </div>
             <div class="box">
                 <h3>contact info</h3>
@@ -342,7 +557,7 @@
                 <a href="#"> <i class="fas fa-phone"></i> +356-481-0286</a>
                 <a href="#"> <i class="fas fa-envelope"></i> medcare.info.com</a>
                 <a href="#"> <i class="fas fa-envelope"></i> medcare.info.@gmail.com</a>
-                <a href="#"> <i class="fas fa-map-marker-alt"></i>  dhaka, Bangladesh - 1000</a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i>  London, United Kingdom</a>
             </div>
             <div class="box">
                 <h3>follow us</h3>
@@ -355,7 +570,7 @@
                 <a href="#"> <i class="fab fa-pinterest"></i> pinterest</a>
             </div>
         </div>
-        <div class="credit">created by <span>zaki chowdhury</span> | all right reserved</div>
+        <div class="credit">created by <span>Chamudi Chethana</span> | all right reserved</div>
     </section>
     <!-- Footer section End  -->
 
